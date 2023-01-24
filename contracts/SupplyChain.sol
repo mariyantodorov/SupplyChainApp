@@ -41,8 +41,8 @@ contract SupplyChain {
     function addParticipant(
         string memory _name,
         string memory _pass,
-        string memory _pType,
-        address _pAdd
+        address _pAdd,
+        string memory _pType
     ) public returns (uint32) {
         uint32 userId = participant_Id++;
         participants[userId].userName = _name;
