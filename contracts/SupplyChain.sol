@@ -36,7 +36,7 @@ contract SupplyChain {
 
     mapping(uint32 => Participant) public participants;
 
-    event TransferOwnership(uint32 productId);
+    event TransferOwnership(uint32 indexed productId);
 
     function addParticipant(
         string memory _name,
